@@ -1,29 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
-
-function refreshCode(){
-    const locoScroll = new LocomotiveScroll({
-        el: document.querySelector("#main"),
-        smooth: true
-      });
-      
-      locoScroll.on("scroll", ScrollTrigger.update);
-      
-      ScrollTrigger.scrollerProxy("#main", {
-        scrollTop(value) {
-          return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-        },
-        
-        pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
-      });
-      
-      
-      ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-      
-      ScrollTrigger.refresh();
-}
+gsap.registerPlugin(ScrollTrigger)
 
 function LandingTextAnimation(){
     const landingpageanimationtext = document.querySelectorAll(".animation1")
@@ -142,12 +117,8 @@ page5.addEventListener("mouseleave", () => {
 });
 }
 
-refreshCode()
 LandingTextAnimation()
 hoveringanimation()
 videoPLay()
 Pinanimation()
 cursorAnimation1()
-
-
-

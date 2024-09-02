@@ -90,7 +90,7 @@ nav #nav-menus a{
 }
 .animated-button{
    position: absolute;
-   top: 13%;
+   bottom: 13%;
    z-index: 99999;
 }
 .page-button-xyz{
@@ -370,20 +370,44 @@ nav #nav-menus a{
 #page5-bottom h1{
    top: -19%;
 }
+#success{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding: 0px 30px;
+}
+.success-story{
+   position: relative;
+   height: 60%;
+   width: 30%;
+   background: #1f1f22;
+   transition: all ease-in-out 0.4s;
+   border-radius: 20px;
+   z-index: 999;
+}
+.success-story::before{
+   content: "";
+   position: absolute;
+   z-index: 888;
+   height: 100%;
+   width: 100%;
+   left: 3%;
+   top: 3%;
+   border-radius: 20px;
+   background: #ffffff15;
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.success-story:hover{
+   width: 40%;
+}
+.success-story:hover{
+   background: #1f1f222d;
+}
 #cursor {
    opacity: 0;
    scale:0;
