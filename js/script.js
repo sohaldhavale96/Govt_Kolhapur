@@ -155,18 +155,6 @@ const img2 = document.querySelector("#page6-photo-2")
 const img3 = document.querySelector("#page6-photo-3")
 const success = document.querySelectorAll(".success-story")
 const tl = gsap.timeline()
-tl.from(success,{
-    y:"500px",
-    stagger:{
-        amount:0.2
-    },
-    scrollTrigger:{
-        trigger:page6,
-        start:"10% 30%",
-        end:"50% 30%",
-        scrub:true
-    }
-})
 tl.from(img1,{
     x:"-500px",
     scrollTrigger:{
@@ -198,6 +186,26 @@ tl.from(img3,{
     }
 })}
 
+function clickLink(){
+const links = [
+    { link: "/pages/about.html" },
+    { link: "/pages/gallery.html" },
+    { link: "/pages/events.html" },
+    { link: "/pages/blogs.html" },
+    { link: "/pages/rules.html" },
+    { link: "/pages/contact.html" },
+];
+
+const clickLinks = document.querySelectorAll('.page3-hover-right');
+
+clickLinks.forEach((element, index) => {
+    if (links[index]) {
+        element.addEventListener('click', () => {
+            window.location.href = links[index].link;
+        });
+    }
+});
+}
 
 LandingTextAnimation()
 hoveringanimation()
@@ -206,3 +214,4 @@ Pinanimation()
 cursorAnimation1()
 page88Animation()
 successAnimation()
+clickLink()

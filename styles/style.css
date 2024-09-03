@@ -218,6 +218,10 @@ nav #nav-menus a{
    bottom: 0%;
    color: #303030;
 }
+#page3-right .page3-hover-right a{
+   color: #303030;
+   text-decoration: none;
+}
 #page3-right .page3-hover-right .animated_img{
    position: absolute;
    width: 15vw;
@@ -381,6 +385,7 @@ nav #nav-menus a{
    margin-bottom: 5vh;
    position: relative;
    overflow: hidden;
+   border-top: 1px solid #636363;
 }
 #page6 h1{
    text-align: center;

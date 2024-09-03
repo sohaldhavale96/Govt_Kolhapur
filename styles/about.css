@@ -25,6 +25,9 @@ body {
 body {
   background: #111;
 }
+#main{
+  overflow: hidden;
+}
 nav {
   width: 100%;
   position: fixed;
@@ -62,7 +65,7 @@ nav #nav-menus a {
 #page1{
     min-height: 100vh;
     width: 100%;
-    padding: 8vw 3vw 2vw;
+    padding: 8vw 3vw 4vw;
     display: grid;
     place-items: center;
 }
@@ -100,4 +103,44 @@ nav #nav-menus a {
     top: 100%;
     font-size: 5vw;
     z-index: 9999;
+}
+#counter{
+  min-height: 50vh;
+  width: 100%;
+  padding: 3vw 5vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+#counter .counter-text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+#page2 {
+  height: 100vh;
+  width: 300vw;
+  overflow: hidden;
+}
+#page2 #page2-scroller{
+  display: flex;
+}
+#page2 section{
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  background: red;
 }
