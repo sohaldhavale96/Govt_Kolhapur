@@ -53,18 +53,23 @@ gsap.to({}, {
     }
 });
 
-const page2 = document.getElementById('page2')
-const allSections = gsap.utils.toArray('#page2-scroller section')
+function horizontalAnimation(){
 
-let scrolltween = gsap.to(allSections,{
-    xPercent:-100*(allSections.length - 1),
-    ease:"none",
-    scrollTrigger:{
-        trigger:page2,
-        pin:true,
-        scrub:1,
-        end:"+=3000" 
-    }
-})
+    const page2 = document.getElementById('page2')
+    const allSections = gsap.utils.toArray('#page2-scroller section')
+    
+    let scrolltween = gsap.to(allSections,{
+        xPercent:-100*(allSections.length - 1),
+        ease:"none",
+        scrollTrigger:{
+            trigger:page2,
+            pin:true,
+            scrub:1,
+            end:"+=3000" 
+        }
+    })
+
+}
 
 firstAnimation()
+horizontalAnimation()
