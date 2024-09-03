@@ -117,8 +117,92 @@ page5.addEventListener("mouseleave", () => {
 });
 }
 
+function page88Animation(){
+    const page8 = document.querySelector("#page8")
+const images = document.querySelectorAll(".imagetrail")
+
+page8.addEventListener("mousemove",(e)=>{
+    gsap.to(images,{
+        x:e.clientX,
+        y:e.clientY,
+        scale:1,
+        opacity:1,
+        stagger:0.06
+    })
+})
+page8.addEventListener("mouseenter",(e)=>{
+    gsap.to(images,{
+        x:e.clientX,
+        y:e.clientY,
+        scale:1,
+        opacity:1,
+        stagger:0.06
+    })
+})
+page8.addEventListener("mouseleave",(e)=>{
+    gsap.to(images,{
+        scale:0,
+        opacity:0,
+        stagger:0.06
+    })
+})
+}
+
+function successAnimation(){
+const page6 = document.getElementById('page6')
+const img1 = document.querySelector("#page6-photo")
+const img2 = document.querySelector("#page6-photo-2")
+const img3 = document.querySelector("#page6-photo-3")
+const success = document.querySelectorAll(".success-story")
+const tl = gsap.timeline()
+tl.from(success,{
+    y:"500px",
+    stagger:{
+        amount:0.2
+    },
+    scrollTrigger:{
+        trigger:page6,
+        start:"10% 30%",
+        end:"50% 30%",
+        scrub:true
+    }
+})
+tl.from(img1,{
+    x:"-500px",
+    scrollTrigger:{
+        trigger:page6,
+        // markers:true,
+        start:"10% 30%",
+        end:"55% 50%",
+        scrub:true
+    }
+})
+tl.from(img2,{
+    x:"500px",
+    scrollTrigger:{
+        trigger:page6,
+        // markers:true,
+        start:"10% 30%",
+        end:"55% 50%",
+        scrub:true
+    }
+})
+tl.from(img3,{
+    x:"500px",
+    scrollTrigger:{
+        trigger:page6,
+        // markers:true,
+        start:"10% 30%",
+        end:"55% 50%",
+        scrub:true
+    }
+})}
+
+
 LandingTextAnimation()
 hoveringanimation()
 videoPLay()
 Pinanimation()
 cursorAnimation1()
+page88Animation()
+successAnimation()
