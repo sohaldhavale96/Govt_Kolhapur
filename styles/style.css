@@ -73,7 +73,7 @@ nav #nav-menus a{
    font-weight: 900;
    -webkit-text-fill-color: transparent;
    -webkit-text-stroke: 1px;
-   -webkit-text-stroke-color: #ccc;
+   -webkit-text-stroke-color: #ffffff;
 }
 #page1 #head1{
    font-size: 5vw;
@@ -193,7 +193,7 @@ nav #nav-menus a{
 #page3-left h1{
    font-size: 3em;
    padding: 10px;
-   color: #636363;
+   color: #b8b8b8;
 }
 #page3-left p{
    font-size: 0.9em;
@@ -350,12 +350,12 @@ nav #nav-menus a{
 .page5-center-content2 h3{
    font-size: 6em;
    white-space: wrap;
-   color: #636363;
+   color: #B97C3B;
 }
 .page5-center-content2 p{
    font-size: 1em;
    white-space: wrap;
-   color: #303030;
+   color: #2B6DB1;
 }
 
 #page5-bottom{
