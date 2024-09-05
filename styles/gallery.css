@@ -221,3 +221,51 @@ nav #nav-menus a {
   opacity: 0;
   pointer-events: none;
 }
+#footer{
+   height: 70vh;
+   width: 100%;
+   background: rgb(59, 59, 59);
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   padding: 1vw 3vw;
+}
+#footerfirst{
+   height: 100%;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 30% 40% 30%;
+   gap: 10px;
+}
+.footer-content{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.footer-content p{
+   font-weight: 100;
+   font-size: 1vw;
+   text-align: center;
+   color: #8c8c8c;
+}
+.footer-content input{
+   background-color: #2b6eb141;
+   padding: 1vw 2vw;
+   border-radius: 10px;
+   font-size: 1vw;
+   border:none;
+   border-bottom: 1px solid #000;
+   outline: none;
+}
+.footer-content button{
+   background-color: #b97c3ba4;
+   padding: 1vw 2vw;
+   border-radius: 10px;
+   font-size: 1.5vw;
+   border:none;
+   border-bottom: 1px solid #000;
+   outline: none;
+}

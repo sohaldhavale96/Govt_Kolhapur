@@ -190,7 +190,7 @@ function clickLink(){
 const links = [
     { link: "/pages/about.html" },
     { link: "/pages/gallery.html" },
-    { link: "/pages/events.html" },
+    { link: "/pages/teams.html" },
     { link: "/pages/blogs.html" },
     { link: "/pages/rules.html" },
     { link: "/pages/contact.html" },
