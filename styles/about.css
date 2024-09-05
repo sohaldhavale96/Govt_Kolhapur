@@ -203,7 +203,55 @@ nav #nav-menus a {
   font-size: 1em;
 }
 #page3{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background: red;
+  padding: 2vw 4vw;
+}
+#accordin{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid #ccc;
+  padding: 4vw 2vw;
+}
+#accordin .item{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 100%;
+  background: #ffffff4a;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw 2vw;
+}
+.accordin-content{
+  height: 100%;
+  width: 100%;
+}
+#accordin .item .feature-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-description{
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding-top: 4vw;
+  color: #000;
+}
+.accordin-head{
+  font-size: 4vw;
+  padding: 4vw 2vw;
 }
